@@ -53,4 +53,4 @@ class Manager:
         elif self.location == "detailedmemberdata":
             self.detailed_member_data.detailedMemberData()
         elif self.location == "ordermemberslist":
-            self.member_list.orderMemberList()
+            self.order_member_list.orderMemberList()
