@@ -5,7 +5,7 @@ class RegisterMemberMenu:
     def __init__(self, manager):
         self.manager = manager
     
-    def register_member_menu(self):
+    def registerMemberMenu(self):
         selection = ''
         while selection != '9':
             print('Register Member')

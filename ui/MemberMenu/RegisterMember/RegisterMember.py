@@ -2,7 +2,7 @@ class RegisterMember:
     def __init__(self, manager):
         self.manager = manager
     
-    def register_member(self):
+    def registerMember(self):
         print('Please input member information\n')
         name = input('Name: ')
         phone = input('Phone: ')
