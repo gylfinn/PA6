@@ -10,8 +10,8 @@ from ui.SportMenu.RegisterSport.RegisterSportMenu import RegisterSportMenu
 from ui.SportMenu.RegisterSport.RegisterSport import RegisterSport
 from ui.SportMenu.SportInfo.AllSports import AllSports
 from ui.SportMenu.SportInfo.SportMembers import SportMembers
-from Models.Members import *
-from Models.Sports import *
+from Models.Members import MemberList
+from Models.Sports import SportList
 
 class Manager:
     def __init__(self):
