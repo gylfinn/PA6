@@ -25,7 +25,10 @@ class OrderMemberList:
                 .format(member.name,member.yob,member.phone,member.email))
             self.orderMemberList()
         elif selection == '2':
-            self.manager.model_members.get_members_ordered_by_age()
+            by_age = self.manager.model_members.get_members_ordered_by_age()
+            for member in by_age:
+                print("Year of Birth: {}, Name: {}, Phone: {}, Email = {}"
+                .format(member.yob,member.name,member.phone,member.email))
         elif selection == '3':
             self.manager.model_members.get_members_ordered_by_sport()
             

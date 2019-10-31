@@ -30,6 +30,12 @@ class MemberList:
         self.yob_map[yob] = self.id
         self.id+=1
 
+    def find_member_by_name(self,member):
+        for name in self.name_map:
+            if name == member:
+                return True
+        return False
+
     def get_members_ordered_by_name(self):
         ordered_list = []
         for name in self.name_map:
@@ -37,7 +43,10 @@ class MemberList:
         return ordered_list
 
     def get_members_ordered_by_age(self):
-        pass
+        ordered_list = []
+        for age in self.yob_map:
+            ordered_list.append(self.member_map[self.yob_map[age]])
+        return ordered_list
 
     def get_members_ordered_by_sport(self):
         pass

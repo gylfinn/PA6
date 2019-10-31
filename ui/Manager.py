@@ -2,6 +2,7 @@ from ui.MainMenu import MainMenu
 from ui.MemberMenu.MemberMenu import MemberMenu
 from ui.MemberMenu.RegisterMember.RegisterMember import RegisterMember
 from ui.MemberMenu.RegisterMember.RegisterMemberMenu import RegisterMemberMenu
+from ui.MemberMenu.RegisterMemberForSport.RegisterMemberForSport import RegisterMemberForSport
 from ui.MemberMenu.MemberData.MemberData import MemberData
 from ui.MemberMenu.DetailedMemberData.DetailedMemberData import DetailedMemberData
 from ui.MemberMenu.OrderMemberList.OrderMemberList import OrderMemberList
@@ -20,6 +21,7 @@ class Manager:
         self.register_member = RegisterMember(self)
         self.register_member_menu = RegisterMemberMenu(self)
         self.sport_menu = SportMenu(self)
+        self.register_member_for_sport = RegisterMemberForSport(self)
         self.register_sport_menu = RegisterSportMenu(self)
         self.register_sport = RegisterSport(self)
         self.all_sports = AllSports(self)
@@ -28,7 +30,7 @@ class Manager:
         self.member_data = MemberData(self)
         self.order_member_list = OrderMemberList(self)
         self.model_members = MemberList(self)
-
+        self.model_sports = SportList(self)
         self.gotoClass("mainmenu")
 
     def gotoClass(self,location):
@@ -43,6 +45,8 @@ class Manager:
             self.register_member.registerMember()
         elif self.location == "registermembermenu":
             self.register_member_menu.registerMemberMenu()
+        elif self.location == "registermemberforsport":
+            self.register_member_for_sport.registerMemberForSport()
         elif self.location == "memberbydata":
             self.member_data.memberData()
         elif self.location == "registersportmenu":
