@@ -1,3 +1,4 @@
+from Models.Members import MemberList
 # User shall be able to retrieve members by different data
 # ○Get by name
 # ○Get by phone
@@ -7,6 +8,7 @@
 class MemberData:
     def __init__(self, manager):
         self.manager = manager
+        self.memberslist = MemberList()
 
     def memberData(self):
         selection = ""
@@ -19,12 +21,12 @@ class MemberData:
         selection = input()
         while selection != "9":
             if selection == "1":
-                self.manager
+                self.memberslist.retrieve_by_name()
             elif selection == "2":
-                self.manager.gotoClass("memberdata_phone")
+                self.memberslist.retrieve_by_phone()
             elif selection == "3":
-                pass
+                self.memberslist.retrieve_by_email()
             elif selection == "4":
-                pass
+                self.memberslist.retrieve_by_yob()
             elif selection == "9":
                 self.manager.gotoClass("membermenu")
