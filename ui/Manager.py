@@ -10,6 +10,8 @@ from ui.SportMenu.RegisterSport.RegisterSportMenu import RegisterSportMenu
 from ui.SportMenu.RegisterSport.RegisterSport import RegisterSport
 from ui.SportMenu.SportInfo.AllSports import AllSports
 from ui.SportMenu.SportInfo.SportMembers import SportMembers
+from Models.Members import *
+from Models.Sports import *
 
 class Manager:
     def __init__(self):
@@ -25,6 +27,7 @@ class Manager:
         self.detailed_member_data = DetailedMemberData(self)
         self.member_data = MemberData(self)
         self.order_member_list = OrderMemberList(self)
+        self.model_members = MemberList(self)
 
         self.gotoClass("mainmenu")
 

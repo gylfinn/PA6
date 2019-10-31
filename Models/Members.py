@@ -13,7 +13,8 @@ class Member:
         self.yob = yob
 
 class MemberList:
-    def __init__(self):
+    def __init__(self, manager):
+        self.manager = manager
         self.member_map = {}
         self.name_map = SortedDict()
         self.phone_map = SortedDict()

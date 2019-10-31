@@ -1,5 +1,4 @@
 import os
-from colorama import Fore
 
 class MainMenu:
     def __init__(self, manager):
@@ -8,7 +7,6 @@ class MainMenu:
     def mainMenu(self):
         selection = ""
         while selection != "3":
-            print(Fore.GREEN,end="")
             print("1. Sport Menu")
             print("2. Member Menu")
             selection = input()

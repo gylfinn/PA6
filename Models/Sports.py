@@ -9,7 +9,8 @@ class Sport:
         return self.name
 
 class SportList:
-    def __init__(self):
+    def __init__(self, manager):
+        self.manager = manager
         self.sport_list = {}
         self.id = 1
 

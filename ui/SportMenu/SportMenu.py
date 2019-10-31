@@ -1,5 +1,4 @@
 import os
-from colorama import Fore
 
 class SportMenu:
     def __init__(self,manager):
@@ -8,13 +7,11 @@ class SportMenu:
     def sportMenu(self):
         sport_menu_selection = ""
         while sport_menu_selection != "9":
-            print(Fore.GREEN,end="")
             print("1. Register new Sport")
             print("2. Remove Sport")
             print("3. List of all Sports")
             print("4. Detailed Info of Sport")
             print("9. Go Back")
-            print(Fore.WHITE,end="")
             sport_menu_selection = input()
             os.system('cls')
             if sport_menu_selection == "1":
