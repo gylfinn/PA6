@@ -12,16 +12,17 @@ class OrderMemberList:
     def orderMemberList(self):
         #syna alla members
         #svo spurja með order
+        selection = ''
         print("Press 1. to Order by Name")
         print("Press 2. to Order by Age")
         print("Press 3. to Order by Sport")
         print("Press 9. to Go Back")
         selection = input()
         if selection == '1':
-            self.memberlist.get_members_ordered_by_name()
+            print(self.memberlist.get_members_ordered_by_name())
         elif selection == '2':
             self.memberlist.get_members_ordered_by_age()
-        elif selevtion == '3':
+        elif selection == '3':
             self.memberlist.get_members_ordered_by_sport()
             
             
