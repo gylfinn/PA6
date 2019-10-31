@@ -28,3 +28,21 @@ class MemberList:
         self.email_map[email] = self.id
         self.yob_map[yob] = self.id
         self.id+=1
+
+    def get_members_ordered_by_name(self):
+        ordered_list = []
+        for name in self.name_map:
+            ordered_list.append(self.member_map[self.name_map[name]])
+        return ordered_list
+
+    def get_members_ordered_by_age(self):
+        pass
+
+    def get_members_ordered_by_sport(self):
+        pass
+
+    # def get_contacts_ordered_by_name(self):
+    #     ordered_contact_list = []
+    #     for name in self.name_map:
+    #         ordered_contact_list.append(self.contact_map[self.name_map[name]])
+    #     return ordered_contact_list
