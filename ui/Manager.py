@@ -38,7 +38,7 @@ class Manager:
             self.register_member.registerMember()
         elif self.location == "registermembermenu":
             self.register_member_menu.registerMemberMenu()
-        elif self.location == "memberdata":
+        elif self.location == "memberbydata":
             self.member_data.memberData()
         elif self.location == "registersportmenu":
             self.register_sport_menu.registerSportMenu()
