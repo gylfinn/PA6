@@ -24,6 +24,6 @@ class SportMenu:
             elif sport_menu_selection == "3":
                 self.manager.gotoClass("listofsports")
             elif sport_menu_selection == "4":
-                self.manager.gotoClass("detailedsportinfo")
+                self.manager.gotoClass("sportmembers")
             elif sport_menu_selection == "9":
                 self.manager.gotoClass("mainmenu")
