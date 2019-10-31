@@ -3,13 +3,14 @@
 # ○Ordered by age
 # ○Ordered by sport
 
-class MemberList:
+class OrderMemberList:
     def __init__(self,manager):
         self.manager = manager
 
-    def memberList(self):
+    def orderMemberList(self):
         #syna alla members
         #svo spurja með order
+        
         print("Press 1. to Order by Name")
         print("Press 2. to Order by Age")
         print("Press 3. to Order by Sport")

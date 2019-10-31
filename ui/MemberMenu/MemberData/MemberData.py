@@ -19,9 +19,9 @@ class MemberData:
         selection = input()
         while selection != "9":
             if selection == "1":
-                pass
+                self.manager
             elif selection == "2":
-                pass
+                self.manager.gotoClass("memberdata_phone")
             elif selection == "3":
                 pass
             elif selection == "4":
