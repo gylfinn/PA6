@@ -2,6 +2,7 @@ from ui.MainMenu import MainMenu
 from ui.MemberMenu.MemberMenu import MemberMenu
 from ui.MemberMenu.RegisterMember.RegisterMember import RegisterMember
 from ui.MemberMenu.RegisterMember.RegisterMemberMenu import RegisterMemberMenu
+from ui.MemberMenu.MemberData.MemberData import MemberData
 from ui.MemberMenu.DetailedMemberData.DetailedMemberData import DetailedMemberData
 from ui.SportMenu.SportMenu import SportMenu
 from ui.SportMenu.RegisterSport.RegisterSportMenu import RegisterSportMenu
@@ -21,6 +22,7 @@ class Manager:
         self.all_sports = AllSports(self)
         self.sport_members = SportMembers(self)
         self.detailed_member_data = DetailedMemberData(self)
+        self.member_data = MemberData(self)
 
         self.gotoClass("mainmenu")
 
@@ -36,6 +38,8 @@ class Manager:
             self.register_member.registerMember()
         elif self.location == "registermembermenu":
             self.register_member_menu.registerMemberMenu()
+        elif self.location == "memberdata":
+            self.member_data.memberData()
         elif self.location == "registersportmenu":
             self.register_sport_menu.registerSportMenu()
         elif self.location == "registersport":
