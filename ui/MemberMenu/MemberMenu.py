@@ -23,7 +23,7 @@ class MemberMenu:
             elif member_menu_selection == "2":
                 self.manager.gotoClass("registermemberforsport")
             elif member_menu_selection == "3":
-                self.manager.gotoClass("removemember")
+                self.manager.gotoClass("removememberfromsystem")
             elif member_menu_selection == "4":
                 self.manager.gotoClass("removememberfromsport")
             elif member_menu_selection == "5":
