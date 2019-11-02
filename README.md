@@ -8,148 +8,148 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 
 
 
-**Base functionality - 80%**
+	**Base functionality - 80%**
 
-● User shall be able to register new sport ✔
+	● User shall be able to register new sport ✔
 
-	○ Name of sport ✔
+		○ Name of sport ✔
 
-● User shall be able to register new member ✔
+	● User shall be able to register new member ✔
 
-  	○ Name ✔
+		○ Name ✔
 
-  	○ Phone ✔
+		○ Phone ✔
 
-  	○ Email ✔
+		○ Email ✔
 
-  	○ Year of birth ✔
+		○ Year of birth ✔
 
-● User shall be able to sign member up for a particular sport ✔
+	● User shall be able to sign member up for a particular sport ✔
 
-● User shall be able to remove member from a sport ✔
+	● User shall be able to remove member from a sport ✔
 
-● User shall be able to remove a member from the system
+	● User shall be able to remove a member from the system
 
-● User shall be able to remove a sport from the system ✔
+	● User shall be able to remove a sport from the system ✔
 
-● User shall be able to see a list of all members and order it on different data
+	● User shall be able to see a list of all members and order it on different data
 
-  	○ Ordered by name ✔
+		○ Ordered by name ✔
 
-  	○ Ordered by age
+		○ Ordered by age
 
-  	○ Ordered by sport
+		○ Ordered by sport
 
-● User shall be able to retrieve members by different data
+	● User shall be able to retrieve members by different data
 
-  	○ Get by name
+		○ Get by name
 
-  	○ Get by phone
+		○ Get by phone
 
-  	○ Get by email
+		○ Get by email
 
-  	○ Get by age or year of birth
+		○ Get by age or year of birth
 
-● User shall be able to select a member and see detailed information about them
+	● User shall be able to select a member and see detailed information about them
 
- 	○ Name, phone, email, year of birth
+		○ Name, phone, email, year of birth
 
-  	○ All sports this user is registered in
+		○ All sports this user is registered in
 
-● User shall be able to see a list of sports
+	● User shall be able to see a list of sports
 
-● User shall be able to select a sport and see detailed information
+	● User shall be able to select a sport and see detailed information
 
-  	○ List of members in the sport
+		○ List of members in the sport
 
 
-**Operation memory and undo - 5%**
+	**Operation memory and undo - 5%**
 
-● The system shall keep track of every operation done in the system ✔
+	● The system shall keep track of every operation done in the system ✔
 
-  	○ At least operations that change data ✔
+		○ At least operations that change data ✔
 
-● The user shall be able to undo the last operation
+	● The user shall be able to undo the last operation
 
-  	○ Then the next-to-last, etc… like undo usually works
+		○ Then the next-to-last, etc… like undo usually works
 
 
-**Groups in sports - 5%**
+	**Groups in sports - 5%**
 
-● User shall be able to register groups in each sport
+	● User shall be able to register groups in each sport
 
-  	○ Group name
+		○ Group name
 
-  	○ Age from
+		○ Age from
 
-  	○ Age to
+		○ Age to
 
-● When signing a user up for a sport a group must be selected
+	● When signing a user up for a sport a group must be selected
 
-  	○ Only groups for correct age available
+		○ Only groups for correct age available
 
-  	○ Possible to sign into more than one group, if age allows
+		○ Possible to sign into more than one group, if age allows
 
-● When viewing details for a sport the user should see a list of groups
+	● When viewing details for a sport the user should see a list of groups
 
-● User should be able to select a group and see details
+	● User should be able to select a group and see details
 
-  	○ List of users in a group
+		○ List of users in a group
 
-● When viewing details on a user the sport and group should be displayed in list
+	● When viewing details on a user the sport and group should be displayed in list
 
 
-**Waiting lists - 5%**
+	**Waiting lists - 5%**
 
-● The user shall be able to register a maximum number of members in a group (or sport)
+	● The user shall be able to register a maximum number of members in a group (or sport)
 
-● If a group (or sport) is full a member is added to waiting list instead
+	● If a group (or sport) is full a member is added to waiting list instead
 
-● If member is removed from a full group (or sport) a member from the waiting list is added
+	● If member is removed from a full group (or sport) a member from the waiting list is added
 
-  	○ Notify the user when this happens
+		○ Notify the user when this happens
 
 
-**Persistent data - 5%**
+	**Persistent data - 5%**
 
-● The system shall store all data in files
+	● The system shall store all data in files
 
-  	○ Store when system is closed
+		○ Store when system is closed
 
-        	■ prompt?
+			■ prompt?
 
-  	○ Store when user chooses to save
+		○ Store when user chooses to save
 
-● The system shall read everything from the files when the system starts
+	● The system shall read everything from the files when the system starts
 
-  	○ Read data into more efficient data structures in memory
+		○ Read data into more efficient data structures in memory
 
 
-**Efficient data structures - 5%**
+	**Efficient data structures - 5%**
 
-● Efficient data structures should be used for each function of the system
+	● Efficient data structures should be used for each function of the system
 
-  	○ Not everything in lists that are then sorted over and over
+		○ Not everything in lists that are then sorted over and over
 
-        	■ Use sorted structures when needed
+			■ Use sorted structures when needed
 
-        	■ Use multi-key structures where applicable
+			■ Use multi-key structures where applicable
 
-                	● But not when not needed
+				● But not when not needed
 
-  	○ Use simple structures like stack and queue when sufficient
+		○ Use simple structures like stack and queue when sufficient
 
 
-**Efficient flow of operations - 5%**
+	**Efficient flow of operations - 5%**
 
-● Make your system is pleasant to use :)
+	● Make your system is pleasant to use :)
 
-  	○ Quick selections
+		○ Quick selections
 
-        	■ Have numbered lines rather than having to enter full strings
+			■ Have numbered lines rather than having to enter full strings
 
-  	○ Clear user interface
+		○ Clear user interface
 
-        	■ Windowed UI not required
+			■ Windowed UI not required
 
-                	● Operation can still be made clear and obvious
+				● Operation can still be made clear and obvious
