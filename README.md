@@ -12,7 +12,7 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 
 ● User shall be able to register new sport ✔
 
-  ○ Name of sport ✔
+  	○ Name of sport ✔
 
 ● User shall be able to register new member ✔
 
