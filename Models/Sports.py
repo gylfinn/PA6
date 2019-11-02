@@ -47,3 +47,16 @@ class SportList:
         reg_sport = self.get_by_name(sport)
         reg_sport.athletes.remove(member)
         return
+
+    def remove_sport(self,name):
+        try:
+            if name in self.name_of_sport_map:
+                sport_id = self.name_of_sport_map[name]
+                sport = self.sport_map[sport_id]
+                del self.name_of_sport_map[sport.name]
+                del self.sport_map[sport_id]
+                return True
+            else:
+                return False
+        except KeyError:
+            return False

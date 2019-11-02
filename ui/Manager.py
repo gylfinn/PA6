@@ -9,6 +9,7 @@ from ui.MemberMenu.RemoveMember.RemoveFromSystem import RemoveFromSystem
 from ui.MemberMenu.DetailedMemberData.DetailedMemberData import DetailedMemberData
 from ui.MemberMenu.OrderMemberList.OrderMemberList import OrderMemberList
 from ui.SportMenu.SportMenu import SportMenu
+from ui.SportMenu.RemoveSport.RemoveSport  import RemoveSport
 from ui.SportMenu.RegisterSport.RegisterSportMenu import RegisterSportMenu
 from ui.SportMenu.RegisterSport.RegisterSport import RegisterSport
 from ui.SportMenu.SportInfo.AllSports import AllSports
@@ -26,6 +27,7 @@ class Manager:
         self.remove_member = RemoveFromSystem(self) 
         self.remove_member_from_sport = RemoveFromSport(self)
         self.sport_menu = SportMenu(self)
+        self.remove_sport = RemoveSport(self)
         self.register_member_for_sport = RegisterMemberForSport(self)
         self.register_sport_menu = RegisterSportMenu(self)
         self.register_sport = RegisterSport(self)
@@ -48,6 +50,8 @@ class Manager:
             self.member_menu.memberMenu()
         elif self.location == "registermember":
             self.register_member.registerMember()
+        elif self.location == "removesport":
+            self.remove_sport.removeSport()
         elif self.location == "registermembermenu":
             self.register_member_menu.registerMemberMenu()
         elif self.location == "registermemberforsport":

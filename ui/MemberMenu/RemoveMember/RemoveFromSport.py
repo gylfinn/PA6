@@ -16,7 +16,7 @@ class RemoveFromSport:
         else:
             sports = self.manager.model_sports.get_sports_where_member_is_reg(member_info)
             if len(sports) == 0:
-                print("{} is not registered for any sport".format(name))
+                print("{} is not registered for any sport\n".format(name))
                 self.try_again_go_back()
             else:
                 counter = 0

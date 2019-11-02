@@ -29,7 +29,14 @@ class RegisterMemberForSport:
             if len(list_of_sports) == 0:
                 os.system('cls')
                 print("There are No Sports currently registered in the system!")
-                self.manager()
+                while ans != "9":
+                    print("1. Register Sport")
+                    print("9. Go Back")
+                    ans = input()
+                    if ans == "1":#CHECKA UI A ÞESSU
+                        self.manager.gotoClass("registersport")
+                    elif ans == "9":
+                        self.manager.gotoClass("membermenu")
             counter = 0
             for sport in list_of_sports:
                 counter+=1
