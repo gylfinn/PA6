@@ -48,6 +48,8 @@ class MemberList:
             del self.member_map[member_id]
             del self.phone_map[member.phone]
             del self.yob_map[member.yob]
+            return True
+        return False
             
         #geri svo herna undo_operation
 
