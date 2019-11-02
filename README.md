@@ -8,7 +8,7 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 
 
 
-	**Base functionality - 80%**
+**Base functionality - 80%**
 
 	● User shall be able to register new sport ✔
 
@@ -63,7 +63,7 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 		○ List of members in the sport
 
 
-	**Operation memory and undo - 5%**
+**Operation memory and undo - 5%**
 
 	● The system shall keep track of every operation done in the system ✔
 
@@ -74,7 +74,7 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 		○ Then the next-to-last, etc… like undo usually works
 
 
-	**Groups in sports - 5%**
+**Groups in sports - 5%**
 
 	● User shall be able to register groups in each sport
 
@@ -99,7 +99,7 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 	● When viewing details on a user the sport and group should be displayed in list
 
 
-	**Waiting lists - 5%**
+**Waiting lists - 5%**
 
 	● The user shall be able to register a maximum number of members in a group (or sport)
 
@@ -110,7 +110,7 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 		○ Notify the user when this happens
 
 
-	**Persistent data - 5%**
+**Persistent data - 5%**
 
 	● The system shall store all data in files
 
@@ -125,7 +125,7 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 		○ Read data into more efficient data structures in memory
 
 
-	**Efficient data structures - 5%**
+**Efficient data structures - 5%**
 
 	● Efficient data structures should be used for each function of the system
 
@@ -140,7 +140,7 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 		○ Use simple structures like stack and queue when sufficient
 
 
-	**Efficient flow of operations - 5%**
+**Efficient flow of operations - 5%**
 
 	● Make your system is pleasant to use :)
 
