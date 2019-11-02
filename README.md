@@ -28,7 +28,7 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 
 	● User shall be able to remove member from a sport ✔
 
-	● User shall be able to remove a member from the system
+	● User shall be able to remove a member from the system ✔
 
 	● User shall be able to remove a sport from the system ✔
 
