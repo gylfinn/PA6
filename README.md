@@ -6,6 +6,7 @@ what data structures are used. Operations that do not work in the user interface
 evaluated for partial points based on code. User interfaces are evaluated based on efficiency
 and clarity of information, not on beauty. Text-based UI is sufficient.
 Base functionality - 80%
+
 ● User shall be able to register new sport
 ○ Name of sport
 ● User shall be able to register new member
