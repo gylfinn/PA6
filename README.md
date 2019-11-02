@@ -12,17 +12,17 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 
 ● User shall be able to register new sport ✔
 
-  		○ Name of sport ✔
+	○ Name of sport ✔
 
 ● User shall be able to register new member ✔
 
-  ○ Name ✔
+  	○ Name ✔
 
-  ○ Phone ✔
+  	○ Phone ✔
 
-  ○ Email ✔
+  	○ Email ✔
 
-  ○ Year of birth ✔
+  	○ Year of birth ✔
 
 ● User shall be able to sign member up for a particular sport ✔
 
