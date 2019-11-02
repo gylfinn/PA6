@@ -5,18 +5,18 @@ class RemoveFromSport:
         self.manager = manager
 
     def removeFromSport(self):
+        os.system('cls')
         print("Enter the name of which member you want to remove: ")
         name = input()
         member_info = self.manager.model_members.find_member_by_name(name)
+        os.system('cls')
         if member_info == False:
-            os.system('cls')
-            print("Athlete Not Found, Please try again")
+            print("Athlete named {} Not Found, Please try again".format(name))
             self.try_again_go_back()
         else:
             sports = self.manager.model_sports.get_sports_where_member_is_reg(member_info)
             if len(sports) == 0:
-                os.system('cls')
-                print("{} is not registered for any sport\n".format(name))
+                print("{} is not registered for any sport".format(name))
                 self.try_again_go_back()
             else:
                 counter = 0
@@ -34,10 +34,12 @@ class RemoveFromSport:
 
 
     def try_again_go_back(self):
-        print("1. Try again")
-        print("9. Go back")
-        ans = input()
-        if ans == "1":
-            self.manager.gotoClass("removememberfromsport")
-        elif ans == "9":
-            self.manager.gotoClass("membermenu")
+        ans = ""
+        while ans != "9":
+            print("1. Try again")
+            print("9. Go back")
+            ans = input()
+            if ans == "1":
+                self.manager.gotoClass("removememberfromsport")
+            elif ans == "9":
+                self.manager.gotoClass("membermenu")
