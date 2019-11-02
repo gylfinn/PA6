@@ -36,9 +36,9 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 
 		○ Ordered by name ✔
 
-		○ Ordered by age
+		○ Ordered by age ✔
 
-		○ Ordered by sport
+		○ Ordered by sport ✔
 
 	● User shall be able to retrieve members by different data
 

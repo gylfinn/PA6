@@ -21,6 +21,9 @@ class SportList:
         i = self.name_of_sport_map[name]
         return self.sport_map[i]
 
+    def get_name_by_id(self,sportid):
+        return self.sport_map[sportid].name
+
     def add_sport(self,name):
         self.sport_map[self.id] = Sport(name)
         self.name_of_sport_map[name] = self.id
@@ -32,8 +35,10 @@ class SportList:
             sport_lis.append(self.sport_map[self.name_of_sport_map[name]])        
         return sport_lis
 
-    def add_member_to_sport(self,sport,athelete):
-        self.get_by_name(sport).athletes.append(athelete)
+    def add_member_to_sport(self,sport,athlete):
+        self.get_by_name(sport).athletes.append(athlete)
+        self.manager.model_members.add_sport_to_member(athlete,self.name_of_sport_map[sport])
+
 
     def get_sports_where_member_is_reg(self,member):
         list_of_sports=[]

@@ -38,6 +38,7 @@ class Manager:
         self.order_member_list = OrderMemberList(self)
         self.model_members = MemberList(self)
         self.model_sports = SportList(self)
+        
         self.gotoClass("mainmenu")
 
     def gotoClass(self,location):

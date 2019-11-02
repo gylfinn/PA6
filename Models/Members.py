@@ -6,11 +6,12 @@ from sortedcontainers import SortedDict
 # ○Year of birth
 
 class Member:
-    def __init__(self,name,phone,email,yob):
+    def __init__(self,name,phone,email,yob,sports=None):
         self.name = name
         self.phone = phone
         self.email = email
         self.yob = yob
+        self.sports = []
 
 class MemberList:
     def __init__(self, manager):
@@ -34,6 +35,9 @@ class MemberList:
         self.id+=1
         #ger herna lika undo_operation
 
+    def add_sport_to_member(self,member,sport):
+        member.sports.append(sport)
+
     def find_member_by_name(self,member):
         for name in self.name_map:
             if name == member:
@@ -56,7 +60,6 @@ class MemberList:
     def get_members_ordered_by_name(self):
         ordered_list = []
         for name in self.name_map:
-            print(name)
             ordered_list.append(self.member_map[self.name_map[name]])
         return ordered_list
 
@@ -66,8 +69,6 @@ class MemberList:
             ordered_list.append(self.member_map[self.yob_map[age]])
         return ordered_list
 
-    def get_members_ordered_by_sport(self):
-        pass
 
     def retrieve_by_name(self):
         pass
