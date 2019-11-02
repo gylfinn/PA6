@@ -10,31 +10,31 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 
 **Base functionality - 80%**
 
-● User shall be able to register new sport
+● User shall be able to register new sport ✔
 
-  ○ Name of sport
+  ○ Name of sport ✔
 
-● User shall be able to register new member
+● User shall be able to register new member ✔
 
-  ○ Name
+  ○ Name ✔
 
-  ○ Phone
+  ○ Phone ✔
 
-  ○ Email
+  ○ Email ✔
 
-  ○ Year of birth
+  ○ Year of birth ✔
 
-● User shall be able to sign member up for a particular sport
+● User shall be able to sign member up for a particular sport ✔
 
-● User shall be able to remove member from a sport
+● User shall be able to remove member from a sport ✔
 
 ● User shall be able to remove a member from the system
 
-● User shall be able to remove a sport from the system
+● User shall be able to remove a sport from the system ✔
 
 ● User shall be able to see a list of all members and order it on different data
 
-  ○ Ordered by name
+  ○ Ordered by name ✔
 
   ○ Ordered by age
 
@@ -65,9 +65,9 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 
 **Operation memory and undo - 5%**
 
-● The system shall keep track of every operation done in the system
+● The system shall keep track of every operation done in the system ✔
 
-  ○ At least operations that change data
+  ○ At least operations that change data ✔
 
 ● The user shall be able to undo the last operation
 
