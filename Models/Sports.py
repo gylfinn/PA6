@@ -34,3 +34,16 @@ class SportList:
 
     def add_member_to_sport(self,sport,athelete):
         self.get_by_name(sport).athletes.append(athelete)
+
+    def get_sports_where_member_is_reg(self,member):
+        list_of_sports=[]
+        for sport in self.sport_map:
+            for reg_athlete in self.sport_map[sport].athletes:
+                if reg_athlete == member:
+                    list_of_sports.append(self.sport_map[sport])
+        return list_of_sports
+
+    def remove_athlete_from_sport(self,sport,member):
+        reg_sport = self.get_by_name(sport)
+        reg_sport.athletes.remove(member)
+        return

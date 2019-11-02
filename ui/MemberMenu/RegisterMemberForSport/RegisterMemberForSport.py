@@ -9,7 +9,8 @@ class RegisterMemberForSport:
         print("Input the name of the athlete: ")
         name = input()
         os.system('cls')
-        if self.manager.model_members.find_member_by_name(name) == False:
+        member_info = self.manager.model_members.find_member_by_name(name)
+        if member_info == False:
             while ans != "9":
                 print("Athlete Not Found. Do you want to Register a new Member or try again?")
                 print("1. Register new Member")
@@ -31,9 +32,9 @@ class RegisterMemberForSport:
                 print("{}. {}".format(counter,sport.name))
             sport = input("Enter the name of the Sport you want to register member for: ")
             try:
-                self.manager.model_sports.add_member_to_sport(sport,name)
+                self.manager.model_sports.add_member_to_sport(sport,member_info)
                 os.system('cls')
                 print("{} successfully registered to {}\n".format(name,sport))
             except KeyError:
                 os.system('cls')
-                print("You Entered the Incorrect Sport. Please Try again")
+                print("You Entered the Incorrect Sport. Please Try again\n")

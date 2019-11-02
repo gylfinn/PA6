@@ -1,7 +1,7 @@
 import os 
 from colorama import Fore
 
-class RegisterMemberMenu:
+class RemoveMemberMenu:
     def __init__(self, manager):
         self.manager = manager
     

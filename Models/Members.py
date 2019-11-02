@@ -37,7 +37,7 @@ class MemberList:
     def find_member_by_name(self,member):
         for name in self.name_map:
             if name == member:
-                return True
+                return self.member_map[self.name_map[name]]
         return False
 
     def remove_member(self, name):
