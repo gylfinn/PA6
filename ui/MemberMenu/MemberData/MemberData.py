@@ -40,4 +40,3 @@ class MemberData:
             for member in members:
                 print("Name: {}, Year of Birth: {}, Phone: {}, Email: {}\n"
                 .format(member.name,member.yob,member.phone,member.email))
-            # self.manager.gotoClass("memberbydata")

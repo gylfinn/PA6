@@ -57,8 +57,6 @@ class Manager:
             self.register_member_menu.registerMemberMenu()
         elif self.location == "registermemberforsport":
             self.register_member_for_sport.registerMemberForSport()
-        # elif self.location == "remove_member_menu":
-        #     self.remove_member_menu.removeMemberMenu()
         elif self.location == 'removememberfromsystem':
             self.remove_member.removeFromSystem()
         elif self.location == "removememberfromsport":

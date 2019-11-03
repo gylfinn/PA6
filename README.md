@@ -56,11 +56,11 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 
 		○ All sports this user is registered in ✔
 
-	● User shall be able to see a list of sports
+	● User shall be able to see a list of sports ✔
 
-	● User shall be able to select a sport and see detailed information
+	● User shall be able to select a sport and see detailed information ✔
 
-		○ List of members in the sport
+		○ List of members in the sport ✔
 
 
 **Operation memory and undo - 5%**
