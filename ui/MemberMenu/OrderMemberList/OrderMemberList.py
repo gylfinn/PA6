@@ -24,24 +24,38 @@ class OrderMemberList:
                 for member in by_name:
                     print("Name: {}, Year of Birth: {}, Phone: {}, Email: {}"
                     .format(member.name,member.yob,member.phone,member.email))
-                    print("Sports Registered In:")
-                    for sports in member.sports:
-                        print(">{:>10}".format(self.manager.model_sports.get_name_by_id(sports)))
+                    if len(member.sports) == 0:
+                        print("Member is not registered in any Sport!")
+                    else:
+                        print("Sports Registered In:")
+                        for sports in member.sports:
+                            print(">{:>10}".format(self.manager.model_sports.get_name_by_id(sports)))
                 self.orderMemberList()
             elif selection == '2':
                 by_age = self.manager.model_members.get_members_ordered_by_age()
                 for member in by_age:
                     print("Year of Birth: {}, Name: {}, Phone: {}, Email: {}"
                     .format(member.yob,member.name,member.phone,member.email))
-                    print("Sports Registered In:")
-                    for sports in member.sports:
-                        print(">{:>10}".format(self.manager.model_sports.get_name_by_id(sports)))
+                    if len(member.sports) == 0:
+                        print("Member is not registered in any Sport!")
+                    else:
+                        print("Sports Registered In:")
+                        for sports in member.sports:
+                            print(">{:>10}".format(self.manager.model_sports.get_name_by_id(sports)))
                 self.orderMemberList()
             elif selection == '3':
                 by_sport = self.manager.model_sports.get_all_sports()
-                for i in by_sport:
-                    print("Athletes Currently Registerd in {}: ".format(i.name))
-                    for athlete in i.athletes:
-                        print("Name: {}, Year of Birth: {}, Phone: {}, Email: {}"
-                        .format(athlete.name,athlete.yob,athlete.phone,athlete.email))
+                if len(by_sport)==0:
+                    print("There are no Sports currently in the System!")
+                else:
+                    for i in by_sport:
+                        if len(i.athletes)==0:
+                            print("There are no Athletes registered to {}\n".format(i.name))
+                        else:
+                            print("Athletes Currently Registerd in {}: ".format(i.name))
+                            for athlete in i.athletes:
+                                print("Name: {}, Year of Birth: {}, Phone: {}, Email: {}"
+                                .format(athlete.name,athlete.yob,athlete.phone,athlete.email))
                 self.orderMemberList()
+            elif selection == "9":
+                self.manager.gotoClass("membermenu")

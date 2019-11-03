@@ -40,15 +40,15 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 
 		○ Ordered by sport ✔
 
-	● User shall be able to retrieve members by different data
+	● User shall be able to retrieve members by different data ✔
 
-		○ Get by name
+		○ Get by name ✔
 
-		○ Get by phone
+		○ Get by phone ✔
 
-		○ Get by email
+		○ Get by email ✔
 
-		○ Get by age or year of birth
+		○ Get by age or year of birth ✔
 
 	● User shall be able to select a member and see detailed information about them
 
