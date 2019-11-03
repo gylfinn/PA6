@@ -50,11 +50,11 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 
 		○ Get by age or year of birth ✔
 
-	● User shall be able to select a member and see detailed information about them
+	● User shall be able to select a member and see detailed information about them ✔
 
-		○ Name, phone, email, year of birth
+		○ Name, phone, email, year of birth ✔
 
-		○ All sports this user is registered in
+		○ All sports this user is registered in ✔
 
 	● User shall be able to see a list of sports
 
