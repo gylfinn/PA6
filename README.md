@@ -76,27 +76,27 @@ and clarity of information, not on beauty. Text-based UI is sufficient.
 
 **Groups in sports - 5%**
 
-	● User shall be able to register groups in each sport
+	● User shall be able to register groups in each sport ✔
 
-		○ Group name
+		○ Group name ✔
 
-		○ Age from
+		○ Age from ✔
 
-		○ Age to
+		○ Age to ✔
 
-	● When signing a user up for a sport a group must be selected
+	● When signing a user up for a sport a group must be selected ✔
 
-		○ Only groups for correct age available
+		○ Only groups for correct age available ✔
 
 		○ Possible to sign into more than one group, if age allows
 
-	● When viewing details for a sport the user should see a list of groups
+	● When viewing details for a sport the user should see a list of groups ✔
 
-	● User should be able to select a group and see details
+	● User should be able to select a group and see details ✔
 
-		○ List of users in a group
+		○ List of users in a group ✔
 
-	● When viewing details on a user the sport and group should be displayed in list
+	● When viewing details on a user the sport and group should be displayed in list ✔
 
 
 **Waiting lists - 5%**

@@ -10,7 +10,7 @@ class DetailedMemberData:
 
     def detailedMemberData(self):
         members = self.manager.model_members.get_members_ordered_by_name()
-        counter = 0
+        counter = 1
         if len(members) != 0:
             for member in members:
                 print("{}. {}".format(counter,member.name))
@@ -24,6 +24,16 @@ class DetailedMemberData:
                 print("Member is not registered in any Sport!")
             else:
                 print("Sports Registered In:")
+                grp_list = []
                 for sports in member.sports:
-                    print(">{:>10}".format(self.manager.model_sports.get_name_by_id(sports)))
+                    sport = self.manager.model_sports.get_name_by_id(sports)
+                    for group in sport.groups:
+                        for athlete in group.athletes:
+                            if athlete == member:
+                                grp_list.append(group.name)
+                    print(">{:>10}".format(sport.name))
+                    print(">Groups registered in {}: ".format(sport.name))
+                    for grp in grp_list:
+                        print("{:>20}".format(grp))
+                    del grp_list[:]
             print("\n")

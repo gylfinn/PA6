@@ -46,6 +46,20 @@ class RegisterMemberForSport:
                 self.manager.model_sports.add_member_to_sport(sport,member_info)
                 os.system('cls')
                 print("{} successfully registered to {}\n".format(name,sport))
+                avail_grp = self.manager.model_sports.get_groups_from_sport(sport,member_info.yob)
+                if len(avail_grp) != 0:
+                    print("Please add the member to an available group: ")
+                    for grp in avail_grp:
+                        print("Group Name: {}".format(grp.name))
+                    sel_grp = input("Group: ")
+                    for grp in avail_grp:
+                        if sel_grp == grp.name:
+                            self.manager.model_sports.add_member_to_grp(grp,member_info)
+                            os.system('cls')
+                            print("{} successfully added to group {}\n".format(member_info.name,grp.name))
+                            break
+                        else:
+                            print("Group not Available")
             except KeyError:
                 os.system('cls')
                 print("You Entered the Incorrect Sport. Please Try again\n")

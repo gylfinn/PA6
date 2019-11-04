@@ -14,6 +14,7 @@ from ui.SportMenu.RegisterSport.RegisterSportMenu import RegisterSportMenu
 from ui.SportMenu.RegisterSport.RegisterSport import RegisterSport
 from ui.SportMenu.SportInfo.AllSports import AllSports
 from ui.SportMenu.SportInfo.SportMembers import SportMembers
+from ui.SportMenu.GroupSport.GroupSport import GroupSport
 from Models.Members import MemberList
 from Models.Sports import SportList
 
@@ -38,7 +39,7 @@ class Manager:
         self.order_member_list = OrderMemberList(self)
         self.model_members = MemberList(self)
         self.model_sports = SportList(self)
-        
+        self.sport_groups =  GroupSport(self)
         self.gotoClass("mainmenu")
 
     def gotoClass(self,location):
@@ -75,3 +76,5 @@ class Manager:
             self.detailed_member_data.detailedMemberData()
         elif self.location == "ordermemberslist":
             self.order_member_list.orderMemberList()
+        elif self.location == "groupsport":
+            self.sport_groups.groupSport()

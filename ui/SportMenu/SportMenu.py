@@ -11,6 +11,7 @@ class SportMenu:
             print("2. Remove Sport")
             print("3. List of all Sports")
             print("4. Detailed Info of Sport")
+            print("5. Create a Group for Sport")
             print("9. Go Back")
             sport_menu_selection = input()
             os.system('cls')
@@ -22,5 +23,7 @@ class SportMenu:
                 self.manager.gotoClass("listofsports")
             elif sport_menu_selection == "4":
                 self.manager.gotoClass("sportmembers")
+            elif sport_menu_selection == "5":
+                self.manager.gotoClass("groupsport")
             elif sport_menu_selection == "9":
                 self.manager.gotoClass("mainmenu")
